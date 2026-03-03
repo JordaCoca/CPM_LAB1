@@ -1,0 +1,4 @@
+No acabo de entender exactamente este ejercicio (o la tarea en general xd), en este caso, a pesar de ser el 3er ejercicio, habian muchas menos dependencias en general.
+Si la pregunta es como lo paralelizariamos, tengo entendido que no deberia de haber ningún problema:
+    - Cada thread tendria su propio ACU --> Tendriamos que hacer Un vector de ACU, 1 para cada thread, poner una barrera al final, y luego sumar todos los ACU
+    - En cuanto a la paralelización en general, no deberia de habe problema, porque no hay bucles no?
