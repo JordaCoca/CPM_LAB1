@@ -1,0 +1,10 @@
+Pongo escrito lo de la imagen por si mi letra no se entiende (que suele pasar):
+
+    -Si lo he entendido bien, aquí, no hay dependencias entre iteraciones ya que las distancias son todas 0.
+     Por lo que una alineación no tendria que ser necesaria.
+
+    -En cuanto a la dependencia dentro de la propia iteración, podriamos usar una variable auxiliar, o bien 
+     reemplazar la variable T usada en S2 y S3 por --> (A[i] + B[i]) no? ya que ese es basicamente el valor de
+     T, y así no tendriamos que esperar al resultado. Dicho esto, no acabo de entender bien exactamente donde se encuentra el problema
+     ya que si paralelizasemos el bucle, no partiriamos la iteración, sino que cada thread tendria su propia T, C y D, y el acceso
+     simultaneo a A y B no es problematico ya que son operaciones unicamente de lectura.
