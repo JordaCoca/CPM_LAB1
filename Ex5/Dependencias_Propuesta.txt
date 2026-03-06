@@ -1,0 +1,11 @@
+Las dependencias, en mi solución propuesta serían las siguientes:
+
+1: S1->S1.1 | RAW | A[i]   | d=0
+2: S1.1->S2 | RAW | T	   |
+3: S2->S2.1 | RAW | B[i]   | d=0
+4: S2->S1   | WAR | B[i]   | d=1
+5: S2.1->S3 | RAW | TT	   |
+6: S3->S3.1 | RAW | C[i]   | d=0
+7: S3.1->S4 | RAW | TTT	   |
+8: S4->S4.1 | RAW | D[i]   | d=0
+9: S4.1->S5 | RAW | TTTT   | 		
