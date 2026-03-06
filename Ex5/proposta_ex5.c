@@ -23,6 +23,21 @@ for(i=1;i<N-1;i++)
  B[i+1] = A[i+1] + C[i] * 2;
  C[i+1] = B[i+1] + D[i];
  D[i+1] = C[i+1] + E[i];
- E[i] = D[i] + 5;
+ E[i+1] = D[i+1] + 5;
 }
 
+/* 
+    Generamos temporales
+*/
+for(i=1;i<N-1;i++)
+{
+ A[i+1] = B[i+1] + 13;          // S1
+ T = A[+1];                     // S1.1
+ B[i+1] = T + C[i] * 2;         // S2
+ TT = B[i+1];                   // S2.1
+ C[i+1] = TT + D[i];            // S3
+ TTT = C[i+1];                  // S3.1
+ D[i+1] = TTT + E[i];           // S4
+ TTTT = D[i+1];                 // S4.1
+ E[i] = TTTT + 5;               // S5
+}
